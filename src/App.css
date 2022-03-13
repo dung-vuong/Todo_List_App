@@ -51,7 +51,7 @@
   .todo {
     margin: 0.5rem;
     background: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: black;
     display: flex;
     justify-content: space-between;
@@ -64,6 +64,10 @@
   .todo li {
     flex: 1;
   }
+  .date-text{
+    font-size: 1rem;
+    flex: 0;
+  }
   
   .trash-btn,
   .complete-btn {
@@ -74,19 +78,20 @@
     cursor: pointer;
     font-size: 1rem;
     opacity: 0.75;
-    transition: all 0.25s ease;
+    transition: all 0.2s ease;
   }
   .trash-btn:hover {
     opacity: 1;
   }
   .complete-btn {
-    background: rgb(11, 212, 162);
+    background: rgb(12, 214, 113);
   }
   .complete-btn:hover {
     opacity: 1;
   }
   .todo-item {
-    padding: 0rem 0.5rem;
+    padding: 0rem 1rem;
+    white-space: nowrap;
   }
   
   .fa-trash,
@@ -97,9 +102,6 @@
   .fall {
     transform: translateY(10rem) rotateZ(20deg);
     opacity: 0;
-  }
-  .date-text{
-    font-size: 1rem;
   }
   .completed {
     text-decoration: line-through;
