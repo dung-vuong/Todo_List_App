@@ -9,6 +9,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
+  const [cdate,setDate] = useState(""); 
   //RUN ONCE WHEN APP STARTS
   useEffect(() => {
     getLocalTodos()
@@ -51,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>DungV's Todo List</h1>
+        <h1>Your Todo List</h1>
       </header>
       <Form 
         inputText={inputText} 
@@ -60,11 +61,13 @@ function App() {
         setInputText={setInputText}
         status={status}
         setStatus={setStatus}
+        setDate={setDate}
       />
       <TodoList 
         setTodos={setTodos} 
         todos={todos}
         filteredTodos={filteredTodos}
+        cdate={cdate}
       />
     </div>
   );

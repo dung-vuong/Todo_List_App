@@ -1,8 +1,7 @@
 import React from "react";
 
-const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
+const Form = ({setInputText, todos, setTodos, inputText, setStatus, setDate}) => {
     const inputTextHandler = (e) => {
-        console.log(e.target.value)
         setInputText(e.target.value)
     }
     const submitTodoHandler = (e) => {
@@ -12,6 +11,9 @@ const Form = ({setInputText, todos, setTodos, inputText, setStatus}) => {
             {text: inputText, completed: false, id: Math.random() * 1000}
         ])
         setInputText("")
+        //DATE
+        let date = new Date().toLocaleString();
+        setDate(date);
     }
     const statusHandler = (e) => {
         setStatus(e.target.value)
