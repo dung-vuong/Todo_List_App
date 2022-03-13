@@ -1,6 +1,6 @@
 import React from "react";
 
-const Todo = ({text, todo, todos, setTodos, cdate}) => {
+const Todo = ({text, todo, todos, setTodos, date}) => {
     //EVENTS
     const completeHandler = () => {
         setTodos(todos.map((item) => {
@@ -18,7 +18,7 @@ const Todo = ({text, todo, todos, setTodos, cdate}) => {
     }
     return(
         <div className="todo">
-            <li className="date-text">{cdate}</li>
+            <li className="date-text">{date}</li>
             <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}</li>
             <button onClick={completeHandler} className="complete-btn">
                 <i className="fas fa-check"></i>

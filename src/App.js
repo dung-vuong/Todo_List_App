@@ -9,7 +9,6 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-  const [cdate,setDate] = useState(""); 
   //RUN ONCE WHEN APP STARTS
   useEffect(() => {
     getLocalTodos()
@@ -61,13 +60,11 @@ function App() {
         setInputText={setInputText}
         status={status}
         setStatus={setStatus}
-        setDate={setDate}
       />
       <TodoList 
         setTodos={setTodos} 
         todos={todos}
         filteredTodos={filteredTodos}
-        cdate={cdate}
       />
     </div>
   );
