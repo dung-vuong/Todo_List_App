@@ -12,7 +12,6 @@
   header {
     font-size: 1.5em;
   }
-  
   form {
     min-height: 20vh;
     display: flex;
@@ -167,13 +166,13 @@
     color: white;
   }
   select {
-    width: 10em;
+    width: 12em;
   }
   .select::after {
     padding: 0.45em;
   }
   .filter-todo {
-    padding: 0.6em;
+    padding: 0.7em;
   }
   .todo {
     margin: 0.5rem;
