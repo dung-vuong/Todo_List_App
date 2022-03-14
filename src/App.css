@@ -9,13 +9,6 @@
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
-  .imgLink img{
-    height: 50px;
-    width: 50px;
-    z-index: -5;
-    position: fixed;
-    opacity: 0;
-  }
   header {
     font-size: 1.5em;
   }
@@ -74,7 +67,8 @@
     border-color: rgb(88, 88, 88);
   }
   .filter-todo {
-    padding: 1rem;
+    padding: 1.03rem;
+    background: white;
   }
   .todo li {
     flex: 1;
