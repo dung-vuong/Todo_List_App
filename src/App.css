@@ -10,6 +10,8 @@
     min-height: 100vh;
   }
   img{
+    height: 50px;
+    width: 50px;
   }
   header {
     font-size: 1.5em;
