@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import './App.css';
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
+import pic from "./to-do-list-apps.png";
 
 function App() {
   //STATES
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={pic} alt="todo-img" />
       <header>
         <h1>Your Todo List</h1>
       </header>

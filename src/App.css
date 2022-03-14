@@ -9,13 +9,22 @@
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
+  img{
+    display: none;
+  }
   header {
     font-size: 1.5em;
   }
   
-  header,
   form {
     min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header{
+    margin-top: 4em;
+    margin-bottom: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +66,8 @@
     justify-content: space-between;
     align-items: center;
     transition: all 1s ease;
+    border-style: solid;
+    border-color: rgb(88, 88, 88);
   }
   .filter-todo {
     padding: 1rem;
