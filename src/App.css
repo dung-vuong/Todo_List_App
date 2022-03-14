@@ -68,9 +68,8 @@
     font-size: 1rem;
   }
   
-  .trash-btn,
-  .complete-btn {
-    background: #f82929;
+  .trash-btn, .complete-btn {
+    background: #fc2d2d;
     color: white;
     border: none;
     padding: 1rem;
@@ -145,3 +144,42 @@
   .select:hover::after {
     opacity: 0.95;
   }
+
+
+@media only screen and (max-width: 600px){
+  header {
+    font-size: 1em;
+  }
+  form input, form button {
+    font-size: 1em;
+  }
+  form button {
+    background: #4753ff;
+    color: white;
+  }
+  select {
+    width: 10em;
+  }
+  .select::after {
+    padding: 0.45em;
+  }
+  .filter-todo {
+    padding: 0.6em;
+  }
+  .todo {
+    margin: 0.5rem;
+    font-size: 0.8em;
+  }
+  .todo-item {
+    padding: 0 0.5em;
+  }
+  .date-text{
+    font-size: 0.8em;
+    padding: 0 0 0 0.3em;
+  }
+  .trash-btn, .complete-btn {
+    padding: 2em;
+    font-size: 0.7em;
+    opacity: 1;
+  }
+}

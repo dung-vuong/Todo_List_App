@@ -14,8 +14,7 @@ const Todo = ({text, todo, todos, setTodos, date}) => {
     }
     const deleteHandler = () => {
         //check the id we click on == to the todo.id (if yes, delete it)
-        if (window.confirm("Are you sure to delete!?") === true) 
-            setTodos(todos.filter((el) => el.id !== todo.id))
+        setTodos(todos.filter((el) => el.id !== todo.id))
     }
     return(
         <div className="todo">
