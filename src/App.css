@@ -9,9 +9,12 @@
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
   }
-  img{
+  .imgLink img{
     height: 50px;
     width: 50px;
+    z-index: -5;
+    position: fixed;
+    opacity: 0;
   }
   header {
     font-size: 1.5em;

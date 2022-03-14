@@ -51,7 +51,9 @@ function App() {
 
   return (
     <div className="App">
-      <img src={pic} alt="todo-img" />
+      <div className="imgLink">
+        <img src={pic} alt="todo-img" />
+      </div>
       <header>
         <h1>Your Todo List</h1>
       </header>
