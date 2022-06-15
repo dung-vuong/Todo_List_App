@@ -6,4 +6,3 @@
 #### ● Created responsive Todo List App using React
 #### ● Got used to Components management
 #### ● Added time stamp due to the added date
-
