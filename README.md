@@ -3,4 +3,4 @@
 
 ### https://todo-list-app-dungv.vercel.app/
 
-#### Created responsive Todo List App using React
+#### ● Created responsive Todo List App using React
